@@ -1,8 +1,11 @@
+import java.util.ArrayList;
+
 public class Paragraph implements Element{
     public String text;
     public Paragraph(String text){
         this.text=text;
     }
+    ArrayList<Element>content=new ArrayList<>();
 
     @Override
     public String toString() {
@@ -16,7 +19,10 @@ public class Paragraph implements Element{
     public String getText() {
         return text;
     }
-    public void print(){
+    public void print() {
         System.out.println(this.text);
+        for (Element e : content) {
+            e.print();
+        }
     }
 }

@@ -1,8 +1,11 @@
+import java.util.ArrayList;
+
 public class Table implements Element{
     public String title;
     public Table(String title){
         this.title=title;
     }
+    ArrayList<Element> content=new ArrayList<>();
 
     public void setTitle(String title) {
         this.title = title;

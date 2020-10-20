@@ -8,7 +8,7 @@ public class Section implements Element{
         this.sectionTitle=sectionTitle;
         this.content=content;
     }
-    public Section(String s){
+    public Section(String sectionTitle){
         this.sectionTitle=sectionTitle;
     }
     public int add(Element elm){
@@ -26,7 +26,8 @@ public class Section implements Element{
     }
     public void print(){
         for(Element e:content){
-            System.out.println(e);
+            //System.out.println(e);
+            e.print();
         }
     }
 }

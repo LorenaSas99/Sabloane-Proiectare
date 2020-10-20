@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Image implements Element{
     String imageName;
 
@@ -8,6 +10,7 @@ public class Image implements Element{
     public void Image(String imageName){
         this.imageName=imageName;
     }
+    ArrayList<Element> content=new ArrayList<>();
 
     public String getImageNameName() {
         return imageName;
@@ -23,5 +26,8 @@ public class Image implements Element{
     }
     public void print(){
         System.out.println(this.imageName);
+        for (Element e : content) {
+            e.print();
+        }
     }
 }

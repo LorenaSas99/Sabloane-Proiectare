@@ -45,11 +45,9 @@ public class Book {
         }
     }
 
-
     public void addAuthor(Author rpGheo) {
         authors.add(rpGheo);
     }
-
 
 
     /*public Chapter getChapter(int indexChapterOne) {
